@@ -10,7 +10,9 @@
   <script src="aframe-cursor-teleport.js"></script>
 </head>
 <body>
-  <a-scene antialias="true" shadow="autoUpdate: true; enabled: true; type: basic;" cursor="rayOrigin: mouse">
+  
+  <!-- gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/versioned/decoders/1.4.1/;" -->
+  <a-scene stats antialias="true" shadow="autoUpdate: true; enabled: true; type: basic;" cursor="rayOrigin: mouse">
     <a-assets>
       <!-- <a-asset-item id="test-o" src="assets/entrancetest4.obj"></a-asset-item>
       <a-asset-item id="test-m" src="assets/entrancetest4.mtl"></a-asset-item>
@@ -44,8 +46,8 @@
     <a-entity shadow="" gltf-model="assets/rhinoanimaltest2.gltf" rotation="0 180 0" position="0 9.07425 160" blending="none" transparent="false" side="double"></a-entity>
     <!-- <a-entity class="clickable" gltf-model="#rhino_test_1" rotation="0 180 0" position="0 0 0" blending="none" transparent="false" side="double"></a-entity> -->
 
-    
-    <a-entity class="collision" position="0 .2 0" material="color: #d37070" shadow geometry="primitive: box; width: 1000; height: .1; depth: 500"></a-entity>
+    <!-- Baseplate: -->
+    <!-- <a-entity class="collision" position="0 .2 0" material="color: #d37070" shadow geometry="primitive: box; width: 1000; height: .1; depth: 500"></a-entity> -->
     
     <a-entity id="cameraRig" character-controller cursor-teleport="cameraRig: #cameraRig; cameraHead: #head; collisionEntities: .collision; ignoreEntities: .clickable,.navmesh-hole">
       <a-camera id="head" position="0 8 0" camera look-controls="reverseMouseDrag: true" fov="43.8"></a-entity>
