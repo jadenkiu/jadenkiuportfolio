@@ -411,6 +411,8 @@ p.contr {
     text-align: left;
     padding-bottom: 300px;
     margin-bottom: 100px;
+    margin-left: .1%;
+    margin-right: .1%;
   }
 
   .container-boxes {
@@ -430,4 +432,44 @@ p.contr {
     line-height: 25px;
     padding-top: 6px;
     padding-right: 4px;
+  }
+  
+  #fullscreen {
+    position: relative;
+    float: right;
+    font-family: "Poppins-Bold", Arial, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #333;
+    padding: .4rem;
+    background-color: #add745;
+    border-radius: 6px;
+  }
+  
+  #fullscreen {
+    visibility: hidden;
+    position: relative;
+    float: right;
+    font-family: "Poppins-Bold", Arial, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #333;
+    padding: .4rem;
+    background-color: #add745;
+    border-radius: 6px;
+  }
+
+      @media screen and (max-width: 600px), (max-height: 400px) {
+    #fullscreen {
+      visibility: visible;
+      display: block;
+    }
   }
